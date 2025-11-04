@@ -44,6 +44,7 @@ choice
 config KSU_KPROBES_HOOK
     bool "Hook KernelSU with Kprobes"
     depends on KPROBES
+    default y if KSU=m
     help
       If enabled, Hook required KernelSU syscalls with Kernel-probe.
 
